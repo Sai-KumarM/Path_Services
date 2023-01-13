@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathSecure Services</title>
+    <link rel="shortcut icon" href="1.jpg">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Poppins:wght@400;500;700;800&display=swap');
+      body{
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+      }
+      #gradient{
+        filter: blur(2px);
+        z-index: -1;
+      }
+      .image{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: blur(2px);
+        opacity: 0.1;
+        z-index: -1;
+      }
+      .text{
+        color: aliceblue;
+        font-family: "Manrope", sans-serif;
+        text-align: center;
+        padding-top: 8%;
+      }
+      .text p{
+        font-size: 75px;
+        font-weight: 800;
+        letter-spacing: -2px;
+      }
+      .button{
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+        box-sizing: border-box;
+        margin: 0 25%;
+        padding: 15px 8px;
+        width: 80%;
+        max-width: 300px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        text-align: center;
+      }
+      .create{
+        color:#e82a17;
+      }
+      .caution{
+        font-size: 25px;
+        font-weight: 400;
+        color: orange;
+      }
+      @media screen and (max-width: 790px) {
+        .text p{
+          font-size: 60px;
+          font-weight: 700;
+        }
+      }
+      @media  screen and (max-width: 590px) {
+        .text p{
+          font-size: 50px;
+        }
+        .button{
+          font-size: 18px;
+          max-width: 200px;
+          padding: 12px 8px;
+        }
+        .min-text{
+          display: none !important;
+        }
+        .text{
+          padding-top: 18%;
+        }
+        #gradient{
+          filter: blur(1.5px);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div id="gradient"></div>
+  <div class="image"></div>
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <a href="#" class="navbar-brand"> <img src="1.png" style="height: 100px; width: 110px;"><span class="min-text">PathSecure Engineering</span></a>
+
+</nav>
+  <div class="text"> 
+    <div class="button">Under Maintainance <span class="caution">🚧</span></div> 
+    <p>Construction <span class="create">Under</span> <br>Progress</p>
+    <!-- <h3>COMING SOON</h3> -->
+      <!-- <div class="button">Under Maintainance <span class="caution">⚠</span></div> -->
+  </div>
+
+</body>
+<script src="three.r134.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#gradient",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: true,
+  minHeight: 800.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xffffff,
+  backgroundColor: 0x1039,
+  points: 6.00,
+  maxDistance: 22.00,
+  spacing: 20.00,
+  showDots: false
+})
+</script>
+</html>
